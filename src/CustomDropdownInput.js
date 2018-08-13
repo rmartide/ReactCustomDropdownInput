@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../src/MegaCustomDropdownInput.css';
+import '../src/CustomDropdownInput.css';
 
-export default class MegaCustomDropdownInput extends Component {
+export default class CustomDropdownInput extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -75,13 +75,13 @@ export default class MegaCustomDropdownInput extends Component {
     }
 }
 
-MegaCustomDropdownInput.propTypes = {
+CustomDropdownInput.propTypes = {
     values: PropTypes.array,
     handleSelected: PropTypes.func,
     handleChange: PropTypes.func
 }
 
-MegaCustomDropdownInput.defaultProps = {
+CustomDropdownInput.defaultProps = {
     handleChange: () => {},
     handleSelected: () => {}
 }

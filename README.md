@@ -1,4 +1,4 @@
-# React MegaCustomDropdownInput
+# React CustomDropdownInput
 
 It is an input with a dropdown. 
 
@@ -24,5 +24,5 @@ const options1 = [
 ## Usage
 
 ```js
-<MegaCustomDropdownInput values={options1} handleSelected={this.handleSelected} handleChange={this.handleChange} />
+<CustomDropdownInput values={options1} handleSelected={this.handleSelected} handleChange={this.handleChange} />
 ```

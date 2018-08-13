@@ -1,5 +1,5 @@
 {
-  "name": "react-mega-custom-dropdown-input",
+  "name": "react-custom-dropdown-input",
   "version": "1.0.0",
   "description": "An input with a custom dropdown",
   "private": false,
@@ -26,10 +26,10 @@
   "author": "Rodrigo Martín de Lamo <mcgod69esp@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmartide/megaCustomDropdownInput.git"
+    "url": "https://github.com/rmartide/ReactCustomDropdownInput.git"
   },
   "license": "MIT",
-  "main": "build/MegaCustomDropdownInput.js",
+  "main": "build/CustomDropdownInput.js",
   "keywords": [
     "dropdown",
     "input",
