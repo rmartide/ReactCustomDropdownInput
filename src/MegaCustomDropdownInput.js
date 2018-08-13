@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './MegaCustomDropdownInput.css';
 
 class MegaCustomDropdownInput extends Component {
@@ -13,11 +14,6 @@ class MegaCustomDropdownInput extends Component {
     }
     componentDidMount() {
         this.node = ReactDOM.findDOMNode(this);
-    }
-    componentWillMount() {
-    }
-
-    componentWillUnmount() {
     }
 
     handleClick = (value) => {
@@ -77,6 +73,17 @@ class MegaCustomDropdownInput extends Component {
             </div>
         );
     }
+}
+
+MegaCustomDropdownInput.propTypes = {
+    values: PropTypes.array,
+    handleSelected: PropTypes.func,
+    handleChange: PropTypes.func
+}
+
+MegaCustomDropdownInput.defaultProps = {
+    handleChange: () => {},
+    handleSelected: () => {}
 }
 
 export default MegaCustomDropdownInput;
