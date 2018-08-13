@@ -22,7 +22,7 @@
     "url": "https://github.com/rmartide/megaCustomDropdownInput.git"
   },
   "license": "MIT",
-  "main": "src/MegaCustomDropdown.js",
+  "main": "src/MegaCustomDropdownInput.js",
   "keywords": [
     "dropdown",
     "input",
