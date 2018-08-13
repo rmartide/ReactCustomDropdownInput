@@ -9,7 +9,7 @@ It requires bootstrap 4.
 ## Props
 
 * values -> is an array and it will be shown as options in the dropdown
-```
+```es6
 const options1 = [
       { id: 1, label: 'John' },
       { id: 2, label: 'Miles' },
@@ -23,6 +23,6 @@ const options1 = [
 
 ## Usage
 
-```
+```es6
 <MegaCustomDropdownInput values={options1} handleSelected={this.handleSelected} handleChange={this.handleChange} />
 ```
