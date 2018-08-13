@@ -23,6 +23,6 @@ const options1 = [
 
 ## Usage
 
-```es6
+```js
 <MegaCustomDropdownInput values={options1} handleSelected={this.handleSelected} handleChange={this.handleChange} />
 ```
