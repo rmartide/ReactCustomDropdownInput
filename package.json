@@ -1,20 +1,27 @@
 {
   "name": "react-mega-custom-dropdown-input",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "An input with a custom dropdown",
   "private": false,
   "dependencies": {
     "prop-types": "^15.6.2"
   },
+  "peerDependencies": {
+    "react": "^16.4.1"
+  },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build"
   },
   "author": "Rodrigo Martín de Lamo <mcgod69esp@gmail.com>",
   "repository": {
@@ -22,7 +29,7 @@
     "url": "https://github.com/rmartide/megaCustomDropdownInput.git"
   },
   "license": "MIT",
-  "main": "src/MegaCustomDropdownInput.js",
+  "main": "build/MegaCustomDropdownInput.js",
   "keywords": [
     "dropdown",
     "input",
