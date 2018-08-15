@@ -2,9 +2,13 @@
 
 It is an input with a dropdown. 
 
-It gets triggered on focus.
+The dropdown gets triggered on focus.
 
-It requires bootstrap 4.
+The input has the bootstrap class form-control but bootstrap is not needed.
+
+## Example
+
+https://codesandbox.io/s/7ymvr8yvq1
 
 ## Props
 
@@ -17,9 +21,18 @@ const options1 = [
       { id: 4, label: 'Herbie' },
     ];
 ```
-* handleChange -> gets called everytime the user tipes on the input
+* handleChange -> gets called everytime the user types on the input
+```es6
+handleChange = (value) => {
+    //value is the input typed
+  }
+```
 * handleSelected -> gets called everytime the user clicks on a dropdown option
-
+```es6
+ handleSelected = (option) => {
+    ///option is the option selected on the dropdown
+  }
+```
 
 ## Usage
 
