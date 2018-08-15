@@ -8,7 +8,7 @@ The input has the bootstrap class form-control but bootstrap is not needed.
 
 ## Example
 
-https://codesandbox.io/s/7ymvr8yvq1
+[Try it on codesandbox.io](https://codesandbox.io/s/7ymvr8yvq1)
 
 ## Props
 
