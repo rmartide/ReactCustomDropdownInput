@@ -6,9 +6,9 @@ The dropdown gets triggered on focus.
 
 The input has the bootstrap class form-control but bootstrap is not needed.
 
-## Example
+## Demo
 
-[Try it on codesandbox.io](https://codesandbox.io/s/7ymvr8yvq1)
+[Live demo](https://codesandbox.io/s/7ymvr8yvq1)
 
 ## Props
 
