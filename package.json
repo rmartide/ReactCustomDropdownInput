@@ -1,6 +1,6 @@
 {
   "name": "react-custom-dropdown-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An input with a custom dropdown",
   "private": false,
   "dependencies": {
