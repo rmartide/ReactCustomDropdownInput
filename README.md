@@ -6,6 +6,12 @@ The dropdown gets triggered on focus.
 
 The input has the bootstrap class form-control but bootstrap is not needed.
 
+## Update
+
+Now the value typed is added to the dropdown so you can select it like an option of the array.
+
+handleChange is not needed anymore since the value typed can be handle with handleSelected, you can still use it but it's optional.
+
 ## Demo
 
 [Live demo](https://codesandbox.io/s/7ymvr8yvq1)
@@ -21,12 +27,6 @@ const options1 = [
       { id: 4, label: 'Herbie' },
     ];
 ```
-* handleChange -> gets called everytime the user types on the input
-```es6
-handleChange = (value) => {
-    //value is the input typed
-  }
-```
 * handleSelected -> gets called everytime the user clicks on a dropdown option
 ```es6
  handleSelected = (option) => {
@@ -34,8 +34,17 @@ handleChange = (value) => {
   }
 ```
 
+## Optional
+
+* handleChange -> gets called everytime the user types on the input
+```es6
+handleChange = (value) => {
+    //value is the input typed
+  }
+```
+
 ## Usage
 
 ```js
-<CustomDropdownInput values={options1} handleSelected={this.handleSelected} handleChange={this.handleChange} />
+<CustomDropdownInput values={options1} handleSelected={this.handleSelected}/>
 ```

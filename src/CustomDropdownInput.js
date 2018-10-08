@@ -25,7 +25,8 @@ export default class CustomDropdownInput extends Component {
     }
 
     handleChange = (e) => {
-        this.props.handleChange(e.target.value);
+        if(this.props.handleChange)
+            this.props.handleChange(e.target.value);
         this.setState({
             inputValue: e.target.value
         });
@@ -46,13 +47,16 @@ export default class CustomDropdownInput extends Component {
         this.setState({
             showDropdown: false
         })
-        document.removeEventListener("click", () => {});
+        document.removeEventListener("click", () => { });
     }
 
+    inputValueExistsOnValues = () => {
+        return this.props.values.find((element) => element.label === this.state.inputValue);
+    }
 
     render() {
         return (
-            <div style={{ position: 'relative'}}>
+            <div style={{ position: 'relative' }}>
                 <input type="text" value={this.state.inputValue} className='form-control' onChange={this.handleChange} onFocus={this.showDropdown} />
                 {
                     this.state.showDropdown &&
@@ -68,6 +72,18 @@ export default class CustomDropdownInput extends Component {
                                 </span>
                             )
                         }
+                        {
+                            !this.inputValueExistsOnValues() &&
+                            <span
+                                className='custom-dropdown'
+                                key="input-value"
+                                onClick={() => this.handleClick({ id: 'input-value', label: this.state.inputValue })}
+                            >
+                                {
+                                    this.state.inputValue
+                                }
+                            </span>
+                        }
                     </div>
                 }
             </div>
@@ -82,6 +98,6 @@ CustomDropdownInput.propTypes = {
 }
 
 CustomDropdownInput.defaultProps = {
-    handleChange: () => {},
-    handleSelected: () => {}
+    handleChange: () => { },
+    handleSelected: () => { }
 }
